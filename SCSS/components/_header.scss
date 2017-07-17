@@ -1,0 +1,107 @@
+
+//@mixin search(){
+//     @if $width == $small {
+//           position:absolute;
+//           top:5em;
+
+//     }
+
+
+// }
+%cajasombre{
+  line-height: 0;
+  background:$color2;
+  box-shadow: 1px 1px 1px $color2,
+                2px 1.2px 1.5px $color2,
+                4px 4px 4px $color2;
+}
+.icons{
+  top: -2vh;
+  position:relative;
+  right:5vh;
+}
+.search{
+  position: absolute;
+  top:13.9vh; 
+  right:0;
+  cursor:pointer;
+  & > input {
+      padding:10px;
+      display:none;  //quitelo y haga que aparesca con js.
+
+
+  }
+}
+.position{
+  display:block;
+  position:absolute;
+  top: 7em;
+}
+.icon-search{
+      z-index: 1500;
+     
+      position: absolute;
+      right: 2vh;
+      top: 2px;
+      // right:0;
+      line-height: 0;
+      color: $color1;
+      font-size: 5vh;
+      cursor:pointer;
+}
+
+.main-header{
+    background:$color3; 
+    height: 13vh;
+     box-shadow: 1px 1px 1px $color2,
+                2px 1.2px 1.5px $color2,
+                3px 2px 2.3px $color2,
+                4px 4px 4px $color2;
+    
+& .navheader{
+      width: 100%;
+      position:relative;
+      margin: 0 auto;    
+      display: flex;
+     justify-content: space-between;
+     align-items:center;
+}
+
+  .icon-bars{
+            position:absolute;
+            top:0;
+         
+
+            font-size: 5vh;            
+            color: $color1;
+            line-height: 0;
+            cursor:pointer;
+          @include desde($large){
+                display:none;
+            }
+          }
+          .img-logo{
+            position:relative;
+            cursor:pointer;
+            display: inline-block;
+            width: 22vh;
+            padding: .4em 0;  
+            border:none;  
+          @include desde($small){
+            width: 22vh;            
+          }   
+           @include desde($medium){
+            width: 22vh;            
+          }       
+   }
+}
+ 
+//header pegado con fixed
+ .sticky{
+    box-shadow: 3px 3px 4px $color2;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background: $color3;
+    z-index: 1000;
+  }

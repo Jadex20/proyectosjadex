@@ -1,0 +1,5 @@
+//Funcion que enruta  la imagen
+$path: '/IMG/';
+@function pt($img){
+  @return url($path+$img);
+}

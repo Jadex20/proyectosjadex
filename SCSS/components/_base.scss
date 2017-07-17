@@ -1,0 +1,35 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  margin: 0;
+  font-family: $font-texto;
+  line-height: 1.6;
+//**mantener el footer abajo con flex
+   display: flex;
+   flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+h1,h2,h3,h4,h5,h6{
+  fontfamily:$font-title;
+  text-transform: uppercase;
+  font-weight: $light;
+}
+img{
+ max-width: 50%;
+ @include desde($small){
+  width:100%;
+ }
+}
+a{
+  text-decoration: none;
+  font-size: 3.5vh;
+  @include desde($small){
+   font-size: 3.8vh;
+ }
+ @include desde($large){
+   font-size: 4vh;
+ }
+}
+

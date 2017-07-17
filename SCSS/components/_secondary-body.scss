@@ -1,0 +1,47 @@
+//Grid de 12 columnas
+@mixin grid($cols,$cols-total:12){
+   width: percentage($cols/$cols-total);
+   @content;
+}
+
+.secondary-body{
+  position:relative;
+  top:  15vh ; //bajar todo el secondary_body
+  margin: 5vh;
+  display:flex;
+  flex-direction:column;
+
+  grid-auto-flow:column;
+    @include desde($medium){
+      display: grid;        
+      grid-gap:20px;  //separacion entre columnas
+      grid-template-columns:1fr 4fr;  
+    }    
+  &_coment{
+      margin: 0 ;
+      padding: 2em;
+      background: lighten($color4,80%);   
+      line-height: 3.5vh;
+      color:rgba($color4,.6);
+  }
+    &_image{
+      padding: 8vh 0;
+      // background:lighten($color1,50%);
+      background:$color1;
+      // border:1px dashed $color2; 
+          @include desde($large){
+             padding: 7vh 0;
+          }
+      .foto{
+      background-image:img("foto3.png");
+      background-size: contain;
+      background-repeat:no-repeat;
+
+      background-position:center;
+      height: 50vh;
+          @include desde($large){
+              height: 30vh;
+          }
+      }    
+    }
+}

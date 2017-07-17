@@ -1,0 +1,66 @@
+//Funcion que enruta  la imagen
+$path: '/IMG/';
+@function img($img){
+  @return url($path+$img);
+}
+
+
+// PALETA DE COLORES
+$color1:#1f5870; //azul marino
+$color2:#be920b; //amarillo
+$color3:#fff;  //blanco
+$color4:#000;  //negro
+//FUENTES
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Cairo|Calligraffitti|Kaushan+Script|Lato|Oswald:300,400,500');
+$font-title:'Oswald', sans-serif;
+$font-texto:'Lato', sans-serif;
+//ANCHO FUENTES
+$light: 300;
+$normal:400;
+$bold:600;
+// TAMAÑO DE FUENTES -no estan siendo usados aun
+$size_titles:2.5em;
+$size-menutitles:1.3em;
+$size_subtitles:1.5em;
+$size_text: 1em;
+$size_link:10px;
+
+//LAYAUT
+$max-width: 100%;
+
+//of-canvas 23em  en funcion del ancho del viewport
+$offcanvas-width:80%;
+
+
+//mixin para media query
+@mixin desde($size){
+  @media screen and (min-width: $size) and (orientation: landscape){
+    @content;
+  }
+}
+
+$zindex: 1000 1010 1020 1030 1040;
+
+//breakpoints
+$small: 380px;
+$small2:470px;
+$small3:600px;
+$medium:768px;
+$medium2:850px;
+$large:1024px;
+$large2:1200px;
+$x-large:1400px;
+
+
+
+//IMPORTS
+// @import "components/functions"
+@import "components/base";
+@import "components/header";
+@import "components/body";
+@import "components/secondary-body";
+@import "components/footer";
+@import "components/menu";
+@import "components/l-container";
+

@@ -1,0 +1,60 @@
+.footer{
+  // height: 100%;
+  width: 100%;
+
+  //**mantener en el footer abajo
+   align-self: flex-start;
+   // padding: 2em;
+   padding-top: 2em ;
+
+    
+    background-image:url(/IMG/large_fondo2.jpg);
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    top: 20vh;  //mover el footer hacia abajo
+   padding-bottom:2em;;
+   text-align: center;
+   //para crear el fondo degradado sobre la imagen
+    &::after{
+      position:absolute;
+      left: 0;
+      top: 0;
+        content:"";
+        height: 100%;
+        width:100%;
+        opacity:.8;
+        background-image:linear-gradient( $color3 20%,$color1 80%);
+    }
+    //posisiconando los iconos por delante del banner de fondo del footer
+    .sociales{
+      position:relative;
+      z-index: 1900;
+    }
+}
+
+.social-icon{
+  font-size: 2.4em;
+  display: inline-block;
+  margin:0 .2em;
+  color: $color2;
+  text-shadow: 1px 1px 1px $color4;
+  opacity:.7;
+  &:hover{
+    opacity:2;
+    color:darken($color1,1);    
+      }
+}
+.data-info{
+  font-weight: $bold;
+  // margin: 0 auto;
+}
+.social-phone{
+  font-size: 2em;
+  // margin: 0 auto;
+  color:$color2;
+  text-shadow: 1px 1px 1px $color4;
+  &:hover{
+    color:$color3;
+  }
+}
