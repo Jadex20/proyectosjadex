@@ -86,7 +86,7 @@
     color: $color3;
     width:100%;
     // position:relative;
-    padding: .5em 1em;
+    padding: .5em .4em;
     // padding-top:1vh;
     font-weight: $light;
     position:relative;
@@ -94,7 +94,7 @@
    
        @include desde($large){
             background: lighten($color4,40%);
-            z-index:1010px;
+            // z-index:1010px;
             opacity: .7;
             position:absolute;
             top: 3vh;
@@ -102,7 +102,7 @@
              // padding-right: 1.6em;
              // margin: 0 8em;
 
-            transition: all 5s linear;
+            transition: all .4s linear;
             text-shadow:2px 2px 2px $color4,
                         3px 3px 2px $color4,
                         4px 4px 4px $color4;
@@ -111,11 +111,11 @@
       // left: -3vh;
     }
     &:hover{
-        transition:  all .3s ease .3s;
+        transition:  all .3s linear;
         color:$color2;
         width:100%;
         
-        font-weight: $bold;
+        // font-weight: $bold;
         text-shadow: 2px 2px 2px  $color4;
      }
 
