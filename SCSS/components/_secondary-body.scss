@@ -28,6 +28,7 @@
       padding: 8vh 0;
       // background:lighten($color1,50%);
       background:$color1;
+      opacity: .89;
       // border:1px dashed $color2; 
           @include desde($large){
              padding: 7vh 0;
@@ -36,7 +37,6 @@
       background-image:img("foto3.png");
       background-size: contain;
       background-repeat:no-repeat;
-
       background-position:center;
       height: 50vh;
           @include desde($large){
