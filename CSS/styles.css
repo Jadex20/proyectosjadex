@@ -106,6 +106,7 @@ a {
 .main-header .icon-bars {
   position: absolute;
   top: 0;
+  z-index: 2500;
   font-size: 5vh;
   color: #1f5870;
   line-height: 0;
@@ -155,7 +156,7 @@ a {
 .main-nav.mostrar {
   right: -100%;
 }
-@media screen and (min-width: 850px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .main-nav {
     width: 100%;
     left: 0;
@@ -264,7 +265,7 @@ a {
   position: relative;
   top: 13vh;
   height: 100vh;
-  background-image: url(".../IMG/large_fondo1.jpg");
+  background-image: url("/IMG/large_fondo1.jpg");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
@@ -275,7 +276,7 @@ a {
 }
 
 [class^="text"] {
-  background-image: url(".../IMG/large_fondo1_blurr.png");
+  background-image: url("/IMG/large_fondo1_blurr.png");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
@@ -344,7 +345,7 @@ a {
   }
 }
 .secondary-body_image .foto {
-  background-image: url(".../IMG/foto3.png");
+  background-image: url("/IMG/foto3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

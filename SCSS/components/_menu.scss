@@ -11,7 +11,7 @@
               // transition:  all 3s ease 5s;
           }
    //posicionar el menu en el header
-    @include desde($medium2){
+    @include desde($medium){
       width: 100%; 
       left: 0;
      
