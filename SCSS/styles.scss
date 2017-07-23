@@ -1,5 +1,8 @@
 //Funcion que enruta  la imagen
-$path: '/IMG/';
+// $path:'.../IMG/'; //ruta para subirlo a github
+$path:'/IMG/';  //Variable para desarrollo
+
+
 @function img($img){
   @return url($path+$img);
 }
@@ -10,6 +13,7 @@ $color1:#1f5870; //azul marino
 $color2:#be920b; //amarillo
 $color3:#fff;  //blanco
 $color4:#000;  //negro
+$color5:#999999; //gris
 //FUENTES
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Cairo|Calligraffitti|Kaushan+Script|Lato|Oswald:300,400,500');
@@ -30,7 +34,7 @@ $size_link:10px;
 $max-width: 100%;
 
 //of-canvas 23em  en funcion del ancho del viewport
-$offcanvas-width:80%;
+$offcanvas-width:100%;
 
 
 //mixin para media query
@@ -43,13 +47,14 @@ $offcanvas-width:80%;
 $zindex: 1000 1010 1020 1030 1040;
 
 //breakpoints
-$small: 380px;
-$small2:470px;
-$small3:600px;
+$small: 320px;
+$small2:480px;
+$small3:550px;  //591
 $medium:768px;
 $medium2:850px;
 $large:1024px;
 $large2:1200px;
+
 $x-large:1400px;
 
 
@@ -58,9 +63,9 @@ $x-large:1400px;
 // @import "components/functions"
 @import "components/base";
 @import "components/header";
+@import "components/menu";
 @import "components/body";
 @import "components/secondary-body";
 @import "components/footer";
-@import "components/menu";
 @import "components/l-container";
 
