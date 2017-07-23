@@ -8,6 +8,7 @@
   position:relative;
   top:  15vh ; //bajar todo el secondary_body
   margin: 5vh;
+  padding-top: 50px;
   display:flex;
   flex-direction:column;
 
@@ -15,23 +16,24 @@
     @include desde($medium){
       display: grid;        
       grid-gap:20px;  //separacion entre columnas
-      grid-template-columns:1fr 4fr;  
+      grid-template-columns:2fr 4fr;  
     }    
   &_coment{
+
       margin: 0 ;
       padding: 2em;
       background: lighten($color4,80%);   
-      line-height: 3.5vh;
+      line-height: 4.6vh;
       color:rgba($color4,.6);
   }
     &_image{
-      padding: 8vh 0;
-      // background:lighten($color1,50%);
-      background:$color1;
+      padding: 2vh 0;
+      background:lighten($color4,20%);
+      // background:$color1;
       opacity: .89;
       // border:1px dashed $color2; 
           @include desde($large){
-             padding: 7vh 0;
+             padding:0;
           }
       .foto{
       background-image:img("foto3.png");
@@ -40,7 +42,8 @@
       background-position:center;
       height: 50vh;
           @include desde($large){
-              height: 30vh;
+              height: 50vh;
+
           }
       }    
     }
