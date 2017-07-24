@@ -29,9 +29,6 @@
     &_image{
       padding: 2vh 0;
       background:lighten($color4,20%);
-      // background:$color1;
-      opacity: .89;
-      // border:1px dashed $color2; 
           @include desde($large){
              padding:0;
           }
@@ -42,7 +39,8 @@
       background-position:center;
       height: 50vh;
           @include desde($large){
-              height: 50vh;
+              height: 39vh;
+
 
           }
       }    

@@ -8,13 +8,7 @@
 
 
 // }
-%cajasombre{
-  line-height: 0;
-  background:$color2;
-  box-shadow: 1px 1px 1px $color2,
-                2px 1.2px 1.5px $color2,
-                4px 4px 4px $color2;
-}
+
 .icons{
   top: -2vh;
   position:relative;
@@ -28,8 +22,6 @@
   & > input {
       padding:10px;
       display:none;  //quitelo y haga que aparesca con js.
-
-
   }
 }
 .position{

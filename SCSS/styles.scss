@@ -1,9 +1,9 @@
 //Funcion que enruta  la imagen
 //ruta para subirlo a github
-$path:'.../IMG/'; 
+// $path:'.../IMG/'; 
 // --------------------------
  //Variable para desarrollo
-// $path:'/IMG/'; 
+$path:'/IMG/'; 
 
 
 @function img($img){
@@ -46,7 +46,6 @@ $offcanvas-width:100%;
     @content;
   }
 }
-
 $zindex: 1000 1010 1020 1030 1040;
 
 //breakpoints

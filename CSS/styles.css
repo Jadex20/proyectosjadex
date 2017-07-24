@@ -149,8 +149,7 @@ a {
   z-index: 10000;
   position: fixed;
   top: 13.7vh;
-  width: 80%;
-  opacity: .96;
+  width: 100%;
   width: 100%;
 }
 .main-nav.mostrar {
@@ -159,13 +158,13 @@ a {
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .main-nav {
     width: 100%;
-    left: 0;
   }
 }
 
 .main-menu {
   margin: 0;
   position: relative;
+  left: 0;
   width: 70%;
   list-style: none;
   height: 100vh;
@@ -174,16 +173,18 @@ a {
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .main-menu {
     text-align: center;
+    width: 68%;
     background: #fff;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    font-size: 1em;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
     top: -13.9vh;
     height: auto;
-    left: 10em;
+    left: 9em;
   }
 }
 .main-menu__item {
@@ -265,7 +266,7 @@ a {
   position: relative;
   top: 13vh;
   height: 100vh;
-  background-image: url(".../IMG/large_fondo1.jpg");
+  background-image: url("/IMG/large_fondo1.jpg");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
@@ -276,7 +277,7 @@ a {
 }
 
 [class^="text"] {
-  background-image: url(".../IMG/large_fondo1_blurr.png");
+  background-image: url("/IMG/large_fondo1_blurr.png");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
@@ -337,7 +338,6 @@ a {
 .secondary-body_image {
   padding: 2vh 0;
   background: #333333;
-  opacity: .89;
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .secondary-body_image {
@@ -345,7 +345,7 @@ a {
   }
 }
 .secondary-body_image .foto {
-  background-image: url(".../IMG/foto3.png");
+  background-image: url("/IMG/foto3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -353,7 +353,7 @@ a {
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .secondary-body_image .foto {
-    height: 50vh;
+    height: 39vh;
   }
 }
 
@@ -419,6 +419,6 @@ a {
 }
 @media screen and (min-width: 850px) and (orientation: landscape) {
   .l-container {
-    margin: 0 5em;
+    margin: 0 4em;
   }
 }
