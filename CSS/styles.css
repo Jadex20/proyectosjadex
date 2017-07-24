@@ -621,6 +621,8 @@ a {
   max-width: 100%;
 }
 
+
+
 @media screen and (min-width: 850px) and (orientation: landscape) {
   .l-container {
     margin: 0 4em;
