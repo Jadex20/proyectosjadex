@@ -1,9 +1,9 @@
 .main-nav{
     z-index: 10000;
     position:fixed;
-    top:13.7vh;
+    top:16.5vh;
     width:100%;
-    // opacity: .96;
+    opacity: .93;
     width:$offcanvas-width;
            &.mostrar{    
               right: -$offcanvas-width;
@@ -12,15 +12,14 @@
    //posicionar el menu en el header
     @include desde($medium){
       width: 100%; 
-     
-     
+      top: 16.7vh;
     }   
 }
 .main-menu{
     margin:0;
     position:relative;
     left:0;
-    width: 70%;
+    width: 80%;
     list-style:none;
     // transition:  all .2s ease .2s;
     height:100vh;
@@ -34,7 +33,7 @@
             display:flex;
             font-size: 1em;
             justify-content: center;
-            top:-13.9vh;  //   // 
+            top:-17.9vh;  //   // 
             height:auto;
             left:10em;
     }  
@@ -42,7 +41,6 @@
  &__item{
     position:relative;
       width: 100%;
-      opacity: .5;
       cursor:pointer;
       opacity: .8;
       border-bottom: 1px dashed rgba($color1, 1);

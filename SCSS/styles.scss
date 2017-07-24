@@ -1,9 +1,9 @@
 //Funcion que enruta  la imagen
 //ruta para subirlo a github
-$path:'.../IMG/'; 
+// $path:'.../IMG/'; 
 // --------------------------
  //Variable para desarrollo
-// $path:'/IMG/'; 
+$path:'/IMG/'; 
 
 
 @function img($img){
@@ -20,8 +20,9 @@ $color5:#999999; //gris
 //FUENTES
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Cairo|Calligraffitti|Kaushan+Script|Lato|Oswald:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Orbitron');
 $font-title:'Oswald', sans-serif;
-$font-texto:'Lato', sans-serif;
+$font-texto:'Orbitron','Lato', sans-serif;
 //ANCHO FUENTES
 $light: 300;
 $normal:400;
@@ -68,6 +69,7 @@ $x-large:1400px;
 @import "components/menu";
 @import "components/body";
 @import "components/secondary-body";
+@import "components/container-skew";
 @import "components/footer";
 @import "components/l-container";
 

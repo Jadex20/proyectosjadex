@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=devic  e-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Proyecto personal</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 <link href="https://file.myfontastic.com/HNPKCLvDVTHYs57Pefub6T/icons.css" rel="stylesheet">
  
 </head>
@@ -14,6 +14,37 @@
  <nav class="navheader ">
      <!-- contenedor para alineacion perfecta -->
   <img src="/IMG/logopersonal-grande.png" alt="logo" class=" img-logo">
+  <script>
+     var fecha = new Date();
+        var dia= fecha.getDay();
+        if( dia === 0){
+           dia="Domingo";
+         }
+        else if(dia === 1){
+          dia ="Lunes";
+        }
+        else if(dia === 2){
+          dia ="Martes";
+        }
+        else if(dia === 3){
+          dia ="Miercoles";
+        }
+        else if(dia === 4){
+          dia ="Jueves";
+        }
+        else if(dia === 5){
+          dia ="Viernes";
+        }
+        else if( dia === 6){
+          dia ="Sabado";
+        }                  
+        var meses = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Setiembre","Octubre","noviembre","Diciembre");         
+          var diaNum  = fecha.getDate();
+          var mes     =meses[fecha.getMonth()];
+          var ano     = fecha.getFullYear();
+     document.write( "<p class='date'>"+dia + ", "+ diaNum + " de "+ mes + " del "+ ano +"</p>");
+      
+        </script> 
 <div class="search ">
   <input placeholder="buscar aquí" type="text" name="search" id="search_text" >
 </div>
@@ -22,10 +53,15 @@
    <div class="icon-bars" id="toggle-menu" >
    </div>
  </div>
+
+
  </nav>
  </div>
+   
 </header>
-<div class="main-body" >
+<div class="main-body"  id="main-body">
+  
+
   <div class="txt_body">
     <p class="text-primary">BIENVENIDO A MI SITIO OFICIAL  SOY</p>
       <p class="text-secondary ">JEFERSON DEXTRE</p>
@@ -49,7 +85,7 @@
 
 </div>
 
-<div class="secondary-body l-container">
+<div class="secondary-body ">
   
       <aside class="secondary-body_image">
           <div class="foto">
@@ -59,10 +95,18 @@
       </aside>
       <p class="secondary-body_coment">¿Cansado de envolverte en código todos los dias? Romperte la cabeza con clases o con los famosos !important?  ¿El hacer un cambio en tu proyecto lo ves todo un mundo?. Mi servicio es lo que necesitas diseñamos sitios web a medida  usando código limpio con buenas prácticas no plantillas y una metodologia modular que permite una variación fácil a medida que el proyecto va haciendose más grande. Te invito a que veas mis trabajos y seguirme en mis redes sociales </p>
 </div>
-<div class="secondary-body l-container">
+<div class="container-skew "  >
+      <div class="skew-item l-container ">
+            <div class="skew"> HTML5 </div>  
+            <div class="skew"> CSS3</div>
+            <div class="skew"> JS</div>
+            <div class="skew"> JQuery</div>
+      </div>
+</div>
+<div class="secondary-body dos ">
   
       <aside class="secondary-body_image">
-          <div class="foto">
+          <div class="foto2">
             
           </div>
         
@@ -81,6 +125,8 @@
   <a href="" class="social-phone icon-phone"> 933189273</a>
   </div>
 </div>
+  
+<a href="#main-body"><div class="arrow"></div></a>
 </footer>
  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="JS/script-toggle.js"></script>

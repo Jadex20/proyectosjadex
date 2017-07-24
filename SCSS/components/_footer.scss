@@ -1,4 +1,6 @@
 .footer{
+  letter-spacing: .6px;
+  word-spacing: 3px;
   // height: 100%;
   width: 100%;
 
@@ -60,4 +62,18 @@
   &:hover{
     color:$color3;
   }
+}
+.arrow{
+  display: flex;
+  justify-content: flex-end;
+  display: fixed;
+  background-position:center;
+  background-repeat:no-repeat;
+  height: 64px;
+  background-image:img('arrow-down-64-wihite.png');
+  position:relative;
+  right:0rem;
+  z-index: 4000;
+  transform: rotate(180deg);
+  cursor: pointer;
 }

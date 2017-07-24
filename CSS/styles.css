@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500");
 @import url("https://fonts.googleapis.com/css?family=Cairo|Calligraffitti|Kaushan+Script|Lato|Oswald:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Orbitron");
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Orbitron", "Lato", sans-serif;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -48,21 +49,105 @@ a {
 }
 
 .icons {
-  top: -2vh;
+  display: flex;
+  flex-direction: column;
+  top: -4vh;
   position: relative;
-  right: 5vh;
+  right: 4vh;
+}
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .icons {
+    right: 6vh;
+  }
+}
+
+.date {
+  margin: 0;
+  line-height: 1.2;
+  display: block;
+  position: relative;
+  top: 30px;
+  flex-direction: column;
+  text-shadow: 1px 1px 1px #000;
+  right: -2vh;
+  color: #be920b;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) and (orientation: landscape) {
+  .date {
+    top: 30px;
+    right: -10vh;
+  }
+}
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .date {
+    font-size: 17px;
+    right: -11vh;
+  }
+}
+
+@media screen and (min-width: 550px) and (orientation: landscape) {
+  .date {
+    font-size: 17px;
+    right: -14vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .date {
+    right: -26vh;
+  }
+}
+
+@media screen and (min-width: 850px) and (orientation: landscape) {
+  .date {
+    right: -43vh;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .date {
+    right: -50vh;
+  }
+}
+
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+  .date {
+    right: -65vh;
+  }
+}
+
+@media screen and (min-width: 1400px) and (orientation: landscape) {
+  .date {
+    right: -70vh;
+  }
 }
 
 .search {
   position: absolute;
-  top: 13.9vh;
-  right: 0;
+  top: 16.5vh;
+  right: -1vh;
   cursor: pointer;
 }
 
+@media screen and (min-width: 850px) and (orientation: landscape) {
+  .search {
+    right: -5.5vh;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .search {
+    right: -5vh;
+  }
+}
+
 .search > input {
-  padding: 10px;
-  display: none;
+  padding: 5px;
+  width: 13em;
 }
 
 .position {
@@ -84,7 +169,7 @@ a {
 
 .main-header {
   background: #fff;
-  height: 13vh;
+  height: 16vh;
   box-shadow: 1px 1px 1px #be920b, 2px 1.2px 1.5px #be920b, 3px 2px 2.3px #be920b, 4px 4px 4px #be920b;
 }
 
@@ -124,13 +209,14 @@ a {
 
 @media screen and (min-width: 320px) and (orientation: landscape) {
   .main-header .img-logo {
-    width: 22vh;
+    width: 26vh;
+    top: -4px;
   }
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .main-header .img-logo {
-    width: 22vh;
+    width: 28vh;
   }
 }
 
@@ -146,8 +232,9 @@ a {
 .main-nav {
   z-index: 10000;
   position: fixed;
-  top: 13.7vh;
+  top: 16.5vh;
   width: 100%;
+  opacity: .93;
   width: 100%;
 }
 
@@ -158,6 +245,7 @@ a {
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .main-nav {
     width: 100%;
+    top: 16.7vh;
   }
 }
 
@@ -165,7 +253,7 @@ a {
   margin: 0;
   position: relative;
   left: 0;
-  width: 70%;
+  width: 80%;
   list-style: none;
   height: 100vh;
   background-image: linear-gradient(90deg, #000 30%, #1f5870 70%);
@@ -179,7 +267,7 @@ a {
     display: flex;
     font-size: 1em;
     justify-content: center;
-    top: -13.9vh;
+    top: -17.9vh;
     height: auto;
     left: 10em;
   }
@@ -188,7 +276,6 @@ a {
 .main-menu__item {
   position: relative;
   width: 100%;
-  opacity: .5;
   cursor: pointer;
   opacity: .8;
   border-bottom: 1px dashed #1f5870;
@@ -264,30 +351,26 @@ a {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 13vh;
+  top: 1vh;
   height: 100vh;
-  background-image: url(".../IMG/large_fondo1.jpg");
+  background-image: url("/IMG/large_fondo1.jpg");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.main-body .txt_body {
-  padding: 20px;
-}
-
 [class^="text"] {
-  background-image: url(".../IMG/large_fondo1_blurr.png");
+  background-image: url("/IMG/large_fondo1_blurr.png");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
   position: relative;
-  top: 20rem;
+  top: 25rem;
   margin: 0;
   padding: 5px 30px;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: 'Audiowide', cursive;
   color: #be920b;
   font-weight: bold;
   font-size: 5vh;
@@ -295,8 +378,11 @@ a {
 }
 
 .text-primary {
+  letter-spacing: 1px;
+  word-spacing: 10px;
   font-size: 4vh;
   font-weight: 300;
+  font-family: 'Orbitron', sans-serif;
 }
 
 @media screen and (min-width: 480px) and (orientation: landscape) {
@@ -312,13 +398,19 @@ a {
 }
 
 .secondary-body {
+  letter-spacing: .6px;
+  word-spacing: 3px;
   position: relative;
-  top: 15vh;
+  top: 10vh;
   margin: 5vh;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   grid-auto-flow: column;
+}
+
+.secondary-body:first-child {
+  top: 2vh;
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
@@ -351,7 +443,7 @@ a {
 }
 
 .secondary-body_image .foto {
-  background-image: url(".../IMG/foto3.png");
+  background-image: url("/IMG/foto3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -364,7 +456,92 @@ a {
   }
 }
 
+.secondary-body .foto2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/IMG/android.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+}
+
+.container-skew {
+  margin: 1.5em 0;
+  position: relative;
+  top: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("/IMG/computers1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .container-skew {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.container-skew .skew-item {
+  margin-top: 10em;
+  display: grid;
+  grid-tamplate-columns: repeat(2, 1fr);
+  width: 100%;
+  height: auto;
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .container-skew .skew-item {
+    display: flex;
+    margin: 3em;
+  }
+}
+
+.skew {
+  color: #fff;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #999180;
+  background: #cccccc;
+  background: url("/IMG/computers1_gau.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-shadow: 2px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000, 4px 4px 4px #000;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .skew {
+    background: url("/IMG/computers1_gau.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    padding: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20em;
+    height: 7em;
+  }
+}
+
+.skew:nth-child(4) {
+  margin-bottom: 5px;
+}
+
 .footer {
+  letter-spacing: .6px;
+  word-spacing: 3px;
   width: 100%;
   align-self: flex-start;
   padding-top: 2em;
@@ -421,6 +598,21 @@ a {
 
 .social-phone:hover {
   color: #fff;
+}
+
+.arrow {
+  display: flex;
+  justify-content: flex-end;
+  display: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 64px;
+  background-image: url("/IMG/arrow-down-64-wihite.png");
+  position: relative;
+  right: 0rem;
+  z-index: 4000;
+  transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .l-container {

@@ -1,27 +1,70 @@
 
-//@mixin search(){
-//     @if $width == $small {
-//           position:absolute;
-//           top:5em;
-
-//     }
-
-
-// }
-
 .icons{
-  top: -2vh;
+  display: flex;
+  flex-direction: column;
+  top: -4vh;
   position:relative;
-  right:5vh;
+  right:4vh;
+  @include desde($small2){
+        right: 6vh;
+  }
+}
+.date{
+  margin: 0;
+  line-height: 1.2;
+  display: block;
+  position:relative;
+  top:30px;
+  flex-direction: column;
+  text-shadow: 1px 1px 1px $color4;
+  right: -2vh;
+  color:$color2;
+  font-size: 15px;
+  @include desde($small){
+        top: 30px;
+        right: -10vh;
+  }
+  @include desde($small2){
+    font-size: 17px;
+    right: -11vh;
+  }
+   @include desde($small3){
+    font-size: 17px;
+    right: -14vh;
+  }
+  @include desde($medium){
+        right: -26vh;
+  }
+   @include desde($medium2){
+        right: -43vh;
+  }
+   @include desde($large){
+        right: -50vh;
+  }
+    @include desde($large2){
+        right: -65vh;
+  }
+    @include desde($x-large){
+        right: -70vh;
+  }
+
 }
 .search{
   position: absolute;
-  top:13.9vh; 
-  right:0;
+  top:16.5vh; 
+  right:-1vh;
   cursor:pointer;
+  @include desde($medium2){
+         right: -5.5vh;
+      }
+  @include desde($large){
+         right: -5vh;
+      }
   & > input {
-      padding:10px;
-      display:none;  //quitelo y haga que aparesca con js.
+      padding:5px;
+      width: 13em;
+      // display:none;  //quitelo y haga que aparesca con js.
+
   }
 }
 .position{
@@ -29,6 +72,7 @@
   position:absolute;
   top: 7em;
 }
+
 .icon-search{
       z-index: 1500;
      
@@ -44,7 +88,7 @@
 
 .main-header{
     background:$color3; 
-    height: 13vh;
+    height: 16vh;
      box-shadow: 1px 1px 1px $color2,
                 2px 1.2px 1.5px $color2,
                 3px 2px 2.3px $color2,
@@ -80,10 +124,11 @@
             padding: .4em 0;  
             border:none;  
           @include desde($small){
-            width: 22vh;            
+            width: 26vh;  
+            top: -4px;          
           }   
            @include desde($medium){
-            width: 22vh;            
+            width: 28vh;            
           }       
    }
 }

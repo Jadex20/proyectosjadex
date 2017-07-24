@@ -1,0 +1,80 @@
+.container-skew{
+  margin: 1.5em 0;
+  position: relative;
+  top: 7em;
+display:flex;
+flex-direction:column;
+align-items:center;
+// background:$color4;
+  background: img('computers1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat:no-repeat;
+height:100vh;
+width:100%;
+@include desde($medium){
+      flex-direction: row;
+      justify-content: center; 
+    
+
+  }
+  .skew-item{
+    margin-top: 10em;
+     display: grid;
+     grid-tamplate-columns: repeat(2,1fr) ;
+     // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    width:100%;
+    height: auto;
+    grid-gap:20px;
+    // height: 500px;
+    @include desde($medium){
+        display: flex;
+        margin: 3em;
+
+
+    }
+  }
+
+}
+
+.skew{
+  // opacity: .5;
+  color:$color3;
+  font-size: $size-subtitles;
+  // padding: 1em;
+  // height: calc(100%/4);
+  // margin: 0 50px;
+  // margin-top: 5vh;
+  display: flex;
+   justify-content: center;
+    align-items: center;
+  // width: 5em;
+ 
+       background:rgba(153, 145, 128,90%);
+       background:lighten($color5,20%);
+       background: img('computers1_gau.jpg');
+       background-attachment: fixed;
+       background-repeat:no-repeat;
+       background-position: center;
+         text-shadow: 2px 1px 1px  $color4,
+                      2px 2px 2px  $color4,
+                      3px 3px 3px  $color4,
+                      4px 4px 4px  $color4; 
+        border-radius:10px;
+@include desde($medium){
+      background: img('computers1_gau.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      padding:2em;
+      background-repeat:no-repeat;
+      background-position: center;
+        width: 20em;
+        height: 7em;    
+            
+  }
+}
+.skew:nth-child(4){
+  margin-bottom: 5px;
+}
