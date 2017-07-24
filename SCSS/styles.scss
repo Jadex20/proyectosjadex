@@ -1,14 +1,17 @@
 //Funcion que enruta  la imagen
 //ruta para subirlo a github
-$path:'.../IMG/'; 
+$path:'../IMG/'; 
 // --------------------------
  //Variable para desarrollo
 // $path:'/IMG/'; 
 
-
 @function img($img){
   @return url($path+$img);
 }
+
+
+
+
 
 
 // PALETA DE COLORES
