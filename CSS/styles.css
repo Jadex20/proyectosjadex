@@ -265,7 +265,7 @@ a {
   position: relative;
   top: 13vh;
   height: 100vh;
-  background-image: url("/IMG/large_fondo1.jpg");
+  background-image: url(".../IMG/large_fondo1.jpg");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
@@ -276,7 +276,7 @@ a {
 }
 
 [class^="text"] {
-  background-image: url("/IMG/large_fondo1_blurr.png");
+  background-image: url(".../IMG/large_fondo1_blurr.png");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
@@ -345,7 +345,7 @@ a {
   }
 }
 .secondary-body_image .foto {
-  background-image: url("/IMG/foto3.png");
+  background-image: url(".../IMG/foto3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

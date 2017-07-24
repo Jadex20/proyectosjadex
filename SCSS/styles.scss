@@ -1,6 +1,9 @@
 //Funcion que enruta  la imagen
-// $path:'.../IMG/'; //ruta para subirlo a github
-$path:'/IMG/';  //Variable para desarrollo
+//ruta para subirlo a github
+$path:'.../IMG/'; 
+// --------------------------
+ //Variable para desarrollo
+// $path:'/IMG/'; 
 
 
 @function img($img){
