@@ -38,11 +38,14 @@
   display: inline-block;
   margin:0 .2em;
   color: $color2;
+
   text-shadow: 1px 1px 1px $color4;
   opacity:.7;
   &:hover{
     opacity:2;
-    color:darken($color1,1);    
+    color:darken($color1,1);  
+    transform: scale(1.7);  
+    transition: all .1s;
       }
 }
 .data-info{

@@ -19,15 +19,17 @@
       grid-template-columns:2fr 4fr;  
     }    
   &_coment{
-
+      // font-size: 1.8em;
+      display: flex;
+      align-items: center;
       margin: 0 ;
       padding: 2em;
       background: lighten($color4,80%);   
-      line-height: 4.6vh;
+      line-height: 4vh;
       color:rgba($color4,.6);
   }
     &_image{
-      padding: 2vh 0;
+      padding: 1.5vh 0;
       background:lighten($color4,20%);
           @include desde($large){
              padding:0;

@@ -36,7 +36,7 @@
             justify-content: center;
             top:-13.9vh;  //   // 
             height:auto;
-            left:9em;
+            left:10em;
     }  
    
  &__item{
@@ -66,7 +66,7 @@
         font-weight: $light;
          position:absolute;
          right:5vw;
-        top:35%;
+        top:8px;
         line-height: 0;
         @include desde($small){
               top:25%;
