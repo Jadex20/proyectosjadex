@@ -40,17 +40,11 @@ width:100%;
 }
 
 .skew{
-  // opacity: .5;
   color:$color3;
   font-size: $size-subtitles;
-  // padding: 1em;
-  // height: calc(100%/4);
-  // margin: 0 50px;
-  // margin-top: 5vh;
   display: flex;
    justify-content: center;
     align-items: center;
-  // width: 5em;
  
        background:rgba(153, 145, 128,90%);
        background:lighten($color5,20%);
@@ -62,8 +56,10 @@ width:100%;
                       2px 2px 2px  $color4,
                       3px 3px 3px  $color4,
                       4px 4px 4px  $color4; 
-        border-radius:10px;
+        border-radius:0;
+
 @include desde($medium){
+      border-radius:30px;
       background: img('computers1_gau.jpg');
       background-attachment: fixed;
       background-position: center;

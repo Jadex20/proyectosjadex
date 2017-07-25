@@ -366,7 +366,7 @@ a {
   background-position: center 50%;
   background-size: cover;
   position: relative;
-  top: 25rem;
+  top: 20rem;
   margin: 0;
   padding: 5px 30px;
   text-align: center;
@@ -383,6 +383,7 @@ a {
   font-size: 4vh;
   font-weight: 300;
   font-family: 'Orbitron', sans-serif;
+  padding: 1.2em;
 }
 
 @media screen and (min-width: 480px) and (orientation: landscape) {
@@ -534,11 +535,12 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   text-shadow: 2px 1px 1px #000, 2px 2px 2px #000, 3px 3px 3px #000, 4px 4px 4px #000;
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .skew {
+    border-radius: 30px;
     background: url("../IMG/computers1_gau.jpg");
     background-attachment: fixed;
     background-position: center;
