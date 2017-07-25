@@ -8,14 +8,15 @@
   letter-spacing: .6px;
   word-spacing: 3px;
   position:relative;
-  top:  10vh ; //bajar todo el secondary_body
-  margin: 5vh;
-  padding-top: 50px;
+  top:  8vh ; //bajar todo el secondary_body
+  margin:  0 5vh;
+  // padding-top: 5px;
   display:flex;
   flex-direction:column;
   grid-auto-flow:column;
-  &:first-child{
-    top: 2vh;
+  &:nth-child(even){
+    position:relative;
+    top: 17vh;
   }
     @include desde($medium){
       display: grid;        
@@ -27,9 +28,9 @@
       display: flex;
       align-items: center;
       margin: 0 ;
-      padding: 2em;
+      padding: 1.7em;
       background: lighten($color4,80%);   
-      line-height: 4vh;
+      line-height: 3.6vh;
       color:rgba($color4,.6);
   }
     &_image{
@@ -44,9 +45,17 @@
       background-repeat:no-repeat;
       background-position:center;
       height: 50vh;
-    
+          @include desde($medium){
+             position:relative;
+             top: 12%;
+          }
+           @include desde($medium2){
+             position:relative;
+             top: 8%;
+          }
           @include desde($large){
-              height: 39vh;
+              height: 50vh;
+              top:0%;
 
 
           }

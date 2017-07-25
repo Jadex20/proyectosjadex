@@ -401,16 +401,16 @@ a {
   letter-spacing: .6px;
   word-spacing: 3px;
   position: relative;
-  top: 10vh;
-  margin: 5vh;
-  padding-top: 50px;
+  top: 8vh;
+  margin: 0 5vh;
   display: flex;
   flex-direction: column;
   grid-auto-flow: column;
 }
 
-.secondary-body:first-child {
-  top: 2vh;
+.secondary-body:nth-child(even) {
+  position: relative;
+  top: 17vh;
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
@@ -425,9 +425,9 @@ a {
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 2em;
+  padding: 1.7em;
   background: #cccccc;
-  line-height: 4vh;
+  line-height: 3.6vh;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -450,9 +450,24 @@ a {
   height: 50vh;
 }
 
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .secondary-body_image .foto {
+    position: relative;
+    top: 12%;
+  }
+}
+
+@media screen and (min-width: 850px) and (orientation: landscape) {
+  .secondary-body_image .foto {
+    position: relative;
+    top: 8%;
+  }
+}
+
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .secondary-body_image .foto {
-    height: 39vh;
+    height: 50vh;
+    top: 0%;
   }
 }
 
