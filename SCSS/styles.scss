@@ -1,6 +1,6 @@
 //Funcion que enruta  la imagen
 //ruta para subirlo a github
-$path:'IMG/'; 
+$path:'..../IMG/'; 
 // --------------------------
  //Variable para desarrollo
 // $path:'/IMG/'; 
@@ -8,6 +8,8 @@ $path:'IMG/';
 @function img($img){
   @return url($path+$img);
 }
+
+
 
 // PALETA DE COLORES
 $color1:#1f5870; //azul marino

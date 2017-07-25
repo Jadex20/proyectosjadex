@@ -353,7 +353,7 @@ a {
   position: relative;
   top: 1vh;
   height: 100vh;
-  background-image: url("IMG/large_fondo1.jpg");
+  background-image: url("..../IMG/large_fondo1.jpg");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
@@ -361,7 +361,7 @@ a {
 }
 
 [class^="text"] {
-  background-image: url("IMG/large_fondo1_blurr.png");
+  background-image: url("..../IMG/large_fondo1_blurr.png");
   background-attachment: fixed;
   background-position: center 50%;
   background-size: cover;
@@ -443,7 +443,7 @@ a {
 }
 
 .secondary-body_image .foto {
-  background-image: url("IMG/foto3.png");
+  background-image: url("..../IMG/foto3.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -461,7 +461,7 @@ a {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-image: url("IMG/android.jpg");
+  background-image: url("..../IMG/android.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -475,7 +475,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("IMG/computers1.jpg");
+  background: url("..../IMG/computers1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -514,7 +514,7 @@ a {
   align-items: center;
   background: #999180;
   background: #cccccc;
-  background: url("IMG/computers1_gau.jpg");
+  background: url("..../IMG/computers1_gau.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -524,7 +524,7 @@ a {
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .skew {
-    background: url("IMG/computers1_gau.jpg");
+    background: url("..../IMG/computers1_gau.jpg");
     background-attachment: fixed;
     background-position: center;
     padding: 2em;
@@ -545,7 +545,7 @@ a {
   width: 100%;
   align-self: flex-start;
   padding-top: 2em;
-  background-image: url("IMG/large_fondo2.jpg");
+  background-image: url("..../IMG/large_fondo2.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -607,7 +607,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   height: 64px;
-  background-image: url("IMG/arrow-down-64-wihite.png");
+  background-image: url("..../IMG/arrow-down-64-wihite.png");
   position: relative;
   right: 0rem;
   z-index: 4000;
